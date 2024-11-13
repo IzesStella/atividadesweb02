@@ -9,6 +9,14 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    
+    public function books()
+{
+    return $this->belongsToMany(Book::class, 'borrowings')
+                ->withPivot('borrowed_at', 'returned_at')
+                ->withTimestamps();
+}
+    
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 

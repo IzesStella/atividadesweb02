@@ -13,11 +13,11 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
     public function run()
-    {
-        FakerFactory::create()->unique(true);
-        $this->call([
-            CategorySeeder::class,
-            AuthorPublisherBookSeeder::class,
-        ]);
-    }
+{
+    $this->call([
+        CategorySeeder::class,
+        AuthorPublisherBookSeeder::class,
+        UserBorrowingSeeder::class, // Novo seeder adicionado aqui
+    ]);
+}
 }

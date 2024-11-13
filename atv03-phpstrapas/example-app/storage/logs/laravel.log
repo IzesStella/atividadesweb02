@@ -1400,3 +1400,83 @@ Port Hayleyside, NM 05955-1363, 2024-11-13 17:24:45, 2024-11-13 17:24:45)) at C:
 #61 C:\\Users\\aluno.lab03\\Documents\\atividadesweb02\\example-app\\artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
 #62 {main}
 "} 
+[2024-11-13 18:06:03] local.ERROR: Command "mmigrate" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"mmigrate\" is not defined.
+
+Did you mean one of these?
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Application.php:702)
+[stacktrace]
+#0 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Application.php(258): Symfony\\Component\\Console\\Application->find('mmigrate')
+#1 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
+"} 
+[2024-11-13 18:14:56] local.ERROR: Class "Database\Seeders\User" not found {"exception":"[object] (Error(code: 0): Class \"Database\\Seeders\\User\" not found at /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/database/seeders/UserBorrowingSeeder.php:16)
+[stacktrace]
+#0 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database\\Seeders\\UserBorrowingSeeder->run()
+#1 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#4 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#5 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#6 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#7 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(61): Illuminate\\Database\\Seeder->__invoke(Array)
+#8 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/database/seeders/DatabaseSeeder.php(17): Illuminate\\Database\\Seeder->call('Database\\\\Seeder...')
+#9 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database\\Seeders\\DatabaseSeeder->run()
+#10 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#11 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#12 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#13 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#14 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate\\Container\\Container->call(Array, Array)
+#15 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate\\Database\\Seeder->Illuminate\\Database\\{closure}()
+#16 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(70): Illuminate\\Database\\Seeder->__invoke()
+#17 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(155): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#18 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(69): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#19 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#20 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#21 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#22 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#23 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#24 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call(Array)
+#25 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#26 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#27 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(67): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArrayInput), Object(Illuminate\\Console\\OutputStyle))
+#28 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(28): Illuminate\\Console\\Command->runCommand('db:seed', Array, Object(Illuminate\\Console\\OutputStyle))
+#29 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php(139): Illuminate\\Console\\Command->call('db:seed', Array)
+#30 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RefreshCommand.php(79): Illuminate\\Database\\Console\\Migrations\\RefreshCommand->runSeeder(NULL)
+#31 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\RefreshCommand->handle()
+#32 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#33 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#34 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#35 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#36 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call(Array)
+#37 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#38 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#39 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#40 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RefreshCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#41 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#42 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#43 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#44 /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#45 {main}
+"} 
+[2024-11-13 18:17:42] local.ERROR: Trait "App\Models\HasFactory" not found {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Trait \"App\\Models\\HasFactory\" not found at /mnt/c/Users/aluno.lab03/Documents/atividadesweb02/atv03-phpstrapas/example-app/app/Models/Borrowing.php:7)
+[stacktrace]
+#0 {main}
+"} 
